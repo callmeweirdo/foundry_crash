@@ -6,7 +6,8 @@ import {HelloWorld} from "../src/HelloWorld.sol";
 
 contract HelloWorldTest is Test {
     HelloWorld helloWorld;
-    function setUp () public {
+
+    function setUp() public {
         helloWorld = new HelloWorld();
     }
 
