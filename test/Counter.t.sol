@@ -4,12 +4,12 @@ pragma solidity 0.8.17;
 import {Test, console2, stdError} from "forge-std/Test.sol";
 import {Counter} from "../src/Counter.sol";
 
-contract CounterTest is Test{
+contract CounterTest is Test {
     Counter public counter;
 
     function setUp() public {
         counter = new Counter();
-    } 
+    }
 
     function testInc() public {
         counter.inc();
